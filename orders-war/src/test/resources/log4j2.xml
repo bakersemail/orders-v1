@@ -1,0 +1,15 @@
+<Configuration monitorInterval="10">
+    <Appenders>
+         <Console name="STDOUT">
+             <PatternLayout pattern="%d{ABSOLUTE} [%t] %5p %c{1}:%L - %.1000m%n"/>
+         </Console>
+    </Appenders>
+    <Loggers>
+        <Logger name="com.gargoylesoftware.htmlunit" level="fatal" />
+        <Logger name="org" level="warn" />
+
+        <Root level="INFO">
+            <AppenderRef ref="STDOUT" />
+        </Root>
+    </Loggers>
+</Configuration>
