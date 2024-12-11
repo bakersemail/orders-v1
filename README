@@ -1,4 +1,4 @@
-Orders documentation
+Orders documentation:
 
 Local build set up:
 Create file in $HOME/.orders.key with contents: "testkey"
