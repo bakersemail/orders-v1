@@ -20,7 +20,7 @@ jobs:
       - name: Build with Maven
         run: mvn --batch-mode --no-transfer-progress --update-snapshots verify
       - run: mkdir staging && cp */target/*.war staging
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: Package
           path: staging
